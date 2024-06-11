@@ -1,0 +1,196 @@
+{
+  "name": "Mann",
+  "email": "210390116001@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Mann",
+  "password": "Mann123",
+ 
+},
+{
+  "name": "Krupa",
+  "email": "210390116002@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Krupa",
+  "password": "Krupa123",
+ 
+},
+{
+  "name": "Harsh patel",
+  "email": "210390116003@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Harsh",
+  "password": "Harsh123",
+ 
+},
+{
+  "name": "Sachin",
+  "email": "210390116005@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Sachin",
+  "password": "Sachin123",
+ 
+},
+{
+  "name": "Harsh savani",
+  "email": "210390116006@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Harsh123",
+  "password": "Harsh123",
+ 
+},
+{
+  "name": "Sneh",
+  "email": "210390116007@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Sneh",
+  "password": "Sneh123",
+ 
+},
+
+{
+  "name": "Charvin",
+  "email": "210390116009@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Charvin",
+  "password": "Charvin123",
+ 
+},
+{
+  "name": "Riya",
+  "email": "210390116010@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Riya",
+  "password": "Riya123",
+ 
+},
+{
+  "name": "Jay",
+  "email": "210390116011@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Jay",
+  "password": "Jay123",
+ 
+},
+{
+  "name": "Ali",
+  "email": "210390116012@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Ali",
+  "password": "Ali123",
+ 
+},
+{
+  "name": "Umesh",
+  "email": "210390116013@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Umesh",
+  "password": "Umesh123",
+ 
+},
+{
+  "name": "Dinkar",
+  "email": "210390116014@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Dinkar",
+  "password": "Dinkar123",
+ 
+},
+{
+  "name": "Darshan",
+  "email": "210390116015@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Darshan",
+  "password": "Darshan123",
+ 
+},
+{
+  "name": "Mit",
+  "email": "210390116016@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Mit",
+  "password": "Mit123",
+ 
+},
+{
+  "name": "Aryan",
+  "email": "210390116017@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Aryan",
+  "password": "Aryan123",
+ 
+},
+{
+  "name": "Dhaval",
+  "email": "210390116018@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Dhaval",
+  "password": "Dhaval123",
+ 
+},
+{
+  "name": "Neel",
+  "email": "210390116019@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Neel",
+  "password": "Neel123",
+ 
+},
+{
+  "name": "Tirth",
+  "email": "210390116020@saffrony.ac.in",
+  "course": "AWP",
+  "username": "Tirth",
+  "password": "Tirth123",
+ 
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git ignore
+
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.env

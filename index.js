@@ -25,3 +25,9 @@ app.use(cors({
   })
 
   dbConnect()
+
+  app.get("/",(req,res)=>{
+    res.send({
+      message:"app start"
+    })
+  })

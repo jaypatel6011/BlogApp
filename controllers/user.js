@@ -151,7 +151,7 @@ exports.getAllUsers = async(req, res) => {
 
 exports.getUserById = async(req, res) => {
     try {
-        const {id} = req.body
+        const {id} = req.params
         const user = await User.findOne({_id : id})
         res.status(200).json({
             success:true,

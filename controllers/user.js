@@ -152,14 +152,14 @@ exports.getAllUsers = async(req, res) => {
 exports.getUserById = async(req, res) => {
     try {
         const {id} = req.body
-        const users = await User.findOne(id)
+        const user = await User.findOne({_id : id})
         res.status(200).json({
             success:true,
-            data:users,
+            data:user,
             message:"fetched User successfully"
         })
     } catch (error) {
-        console.error("error : ",err)
+        console.error("error : ",error)
         res.status(500).json({
             success:false,
             message:"fetched Users internal error"

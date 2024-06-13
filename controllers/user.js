@@ -76,6 +76,7 @@ exports.login = async (req, res) => {
         }
 
         let existingUser = await User.findOne({email})
+        console.log(existingUser);
 
         if(!existingUser){
             return res.json({
@@ -112,6 +113,7 @@ exports.login = async (req, res) => {
         return res.status(200).json({
             success:true,
             data:existingUser,
+            id: existingUser._id,
             role:existingUser.role,
             token,
             message:"Login successfully"
@@ -142,6 +144,54 @@ exports.getAllUsers = async(req, res) => {
         res.status(500).json({
             success:false,
             message:"fetched all Users internal error"
+        })
+    }
+}
+
+
+exports.getUserById = async(req, res) => {
+    try {
+        const {id} = req.body
+        const users = await User.findOne(id)
+        res.status(200).json({
+            success:true,
+            data:users,
+            message:"fetched User successfully"
+        })
+    } catch (error) {
+        console.error("error : ",err)
+        res.status(500).json({
+            success:false,
+            message:"fetched Users internal error"
+        })
+    }
+}
+
+exports.updateUserById = async(req, res) => {
+    try {
+        const {id} = req.params;
+        const {name, email, password, newPassword} = req.body;
+        const existingUser = await User.findOne({_id: id})
+        console.log(existingUser)
+        if(! await bcrypt.compare(password, existingUser.password)){
+            return res.json({
+                success:false,
+                message: "Wrong Password"
+            })
+        }
+        const hashPassword = await bcrypt.hash(newPassword, 10)
+        const user = await User.findByIdAndUpdate({_id: id},{name, email, password:hashPassword, password2:hashPassword})
+        console.log(user)
+        res.status(200).json({
+            success:true,
+            data:user,
+            message:"Profile Update successfully"
+        })
+    } catch (error) {
+        console.error("error : ", error)
+        res.status(500).json({
+            success:false,
+            message:"Profile Update internal error"
         })
     }
 }

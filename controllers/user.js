@@ -195,3 +195,24 @@ exports.updateUserById = async(req, res) => {
         })
     }
 }
+
+exports.deleteUser = async (req, res) => {
+    try {
+        const {id} = req.params;
+
+        await User.findByIdAndDelete({_id: id})
+
+        res.status(200).json({
+            success:true,
+            message:"Delete user successfully"
+        })
+
+    } catch (err) {
+        console.error("error : ",err)
+        res.status(500).json({
+            success:false,
+            message:"Delete user internal error"
+        })
+
+    }
+}
